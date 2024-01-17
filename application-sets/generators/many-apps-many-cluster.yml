@@ -15,8 +15,8 @@ spec:
                 - path: applicationset/examples/matrix/cluster-addons/*
           # cluster generator, 'child' #2
           - clusters:
-              selector: '{{metadata.labels.environment}}'
-                matchLabels: 
+              selector:
+                matchLabels:
                   argocd.argoproj.io/secret-type: cluster
   template:
     metadata:
